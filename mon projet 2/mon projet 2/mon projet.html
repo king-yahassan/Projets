@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+    <link rel="stylesheet" href="mon projet style.css">
+    <script src="https://kit.fontawesome.com/abdc58e1fe.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <a name="TopOfThePage"> </a>
+    <nav>
+        <a href="mon projet.html"> <h1><img src="dragondor.jpg" alt="dragondor" width="40px" style="border-radius: 25px;"> Dragon d'or DUC </h1> </a>
+        <div class = "onglets" id="ongletsMenu">
+            <i class="fas fa-times-circle" onclick="hideMenu()"></i>
+           <ul>
+           <li class="menu"> <a href="#Accueil">ACCUEIL</a></li>
+           <li class="menu"> <a href="#notreProgramme">PROGRAMME</a></li>
+           <li class="menu"> <a class="Multimedia" href="multimedia.html">MULTIMEDIA</a></li>
+           <li class="menu"> <a href="contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <header>
+       <div> <h1>Kung Fu Wushu</h1>
+        <h2>La perpétuelle recherche de la perfection!</h2>
+       </div>
+       <div class="login">
+        <form class="connexion" method="GET" action="process-action.html" onsubmit = "return validateForm()">
+            <label for="Name">Identifiant:</label>
+            <input type="text" name="name" placeholder="tapez votre identifiant" id="identifiant"/>
+            <label for="password">Mot de passe:</label>
+            <input type="password" name="password" placeholder="*********" id="motdepasse"/>
+            <button type="submit" onclick="valider()">Connexion</button>
+          </form>
+         </div> 
+    </header>
+
+    <section >
+        <div class="bienvenus">
+            <h1>Bienvenus au Dragon d'or du Dakar Université Club</h1>
+           <a href="" class="entrez">Entrez pour en savoir plus</a>
+        </div>        
+       
+    </section>
+
+    <section class="notreProgramme">
+        <a name="notreProgramme"> </a>
+        <h1 style="color: white">Notre programme</h1>
+        <div class="programme">
+            <div class="cours">
+            <h2>Taos traditionnels</h2>
+        <ul>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+            <li>Er zuhe lenshi</li>
+        </ul>
+    </div>
+    <div class="cours">
+        <h2>Combat</h2>
+        <ul>
+            <li>Sanda</li>
+            <li>Sanshou</li>
+            <li>Lutte au sol</li>
+        </ul>
+    </div>
+    <div class="cours">
+        <h2>Mais aussi....</h2>
+        <h3>Physique et souplesse</h3>
+        </div>
+    </div>
+        <h2 style="color: white">En ayant comme base la philosophie martiale </h2>
+
+    </section>
+    
+    <script>
+            let ongletsMenu = document.getElementById("ongletsMenu");
+
+            function showMenu(){
+                ongletsMenu.style.right = "0";
+            }
+            function hideMenu(){
+                ongletsMenu.style.right = "-200px";
+            }
+
+    </script>
+
+<a href="#TopOfThePage" style="margin-left:85%;"> Début de la page </a>
+
+  <footer>
+    <h4>Siège: pavillon A du campus social de l'UCAD</h4>
+   <h4> Réseaux sociaux: <a href="https://www.facebook.com/wushu.dor"><i class="fab fa-facebook" style= "color:#f44336"></i></a></h4>
+    <h4>Copyright &copy; 2022 Wuking</h4>
+</footer>
+<script src="Projet.js"></script>
+</body>
+</html>

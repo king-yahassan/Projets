@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "roboto", sans-serif;
+    background-image: url("dragondor.jpg" );
+    background-size: 1366px 1208px ;
+    background-position: center;
+    margin-right: 10px;    
+
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "luxurious roman", sans-serif;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 5px solid #6f6f6fcc;
+    box-shadow: 0 2px 10px 0 rgba(194, 51, 25, 0.15);
+}
+
+nav h1{
+    color: yellow;
+    font-size: 30px;
+}
+
+.onglets{
+   
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+.onglets a{
+    text-decoration: none;
+    color: red;
+    margin-right: 10px;
+    font-weight: bold;
+    
+}
+.menu{
+    display: inline-flex;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.onglets ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+
+}
+
+.onglets ul li a:hover::after{
+    width: 100%;
+    border-bottom: 2px solid red;
+    
+}
+
+
+
+header{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+color: red;
+padding: 40px;
+}
+
+header h1{
+    font-family: "luxurious roman", sans-serif;
+    font-size: 40px;
+}
+
+header h2{
+    font-family: "Cookie",sans-serif;
+    margin-top: -20px;
+    text-align: center;
+    border-bottom: 1px solid red;
+}
+
+.connexion{
+    margin: 10px;
+}
+
+ .bienvenus{
+     width: 90%;
+     color: red;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, 50%);
+     text-align: center;
+ }
+
+ .bienvenus h1{
+     font-size: 50px;
+ }
+
+ .entrez{
+     margin: 10px 0 40px;
+     font-size: 20px;
+     color: white;
+     border: 1px solid white;
+     padding:12px 34px;
+     font-size: 13px;
+     background:transparent;
+     position: relative;
+ }
+ .entrez:hover{
+     border: 1px solid red;
+     background: red;
+     transition: 0.7s;
+ }
+
+
+nav .fas{
+    display: none;
+}
+
+@media (max-width: 680px){
+    .bienvenus h1{
+        font-size: 20px;
+    }
+    .onglets ul li{
+        display: block;
+
+    }
+
+    @media(max-width:680px){
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        .connexion{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .bienvenus{
+            display: flex;
+            flex-direction: column;
+            margin-top: 65px;
+        }
+    }
+
+    .onglets{
+        position: absolute;
+        background: yellow;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        color: white;
+        margin-top: 0;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        color: red;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .onglets ul{
+        padding: 30px;
+
+    }
+}
+
+.notreProgramme{
+    width: 80%;
+    padding-top: 300px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.notreProgramme h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.notreProgramme p{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.programme{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+ 
+.cours{
+flex-basis: 31%;
+background: #f3f3de;
+border-radius: 10px;
+margin-bottom: 5%;
+padding: 20px 12px;
+box-sizing: border-box;
+transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.cours:hover{
+    box-shadow: 0 0 20px 0 hsl(0, 95%, 50%)
+}
+
+@media(max-width:680px){
+    .programme{
+        flex-direction: column;
+    }
+}
+
+footer{
+    width: 100%;
+    font-family: "luxurious roman", sans-serif;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #6f6f6fcc;
+}
+
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    color:white;
+
+}
+
+.corpsMultimedia{
+    background: transparent;
+}
+
+.corpsMultimedia header{
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        color: red;
+        background-image: url("banniere 1.jpg");
+        padding: 40px       
+ }
+
+
+ .slide img{
+    width: 500px;
+    height: auto;
+ }
+ .slider{
+    width: 500px;
+    overflow: hidden;
+    margin: 150px auto;
+ }
+
+ .slides{
+    width: calc(500px*3);
+    animation: glisse 10s infinite;
+
+ }
+
+ .slide{
+     float: left;
+ }
+
+ @keyframes glisse{
+     0% {
+         transform: translateX(0);
+     }
+     33% {
+         transform: translateX(-500PX);
+     }
+     66%{
+         transform: translateX(-1000px);
+        
+     }
+     100%{
+         transform: translateX(0);
+     }
+ }
+
+ .vidéos{
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     order: 2;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ iframe{
+    margin-bottom: 15px; 
+}
+
+.corpsContact{
+    background-image: none;
+}
+
+.corpsContact header{
+    background-image: url("banniere 1.jpg");
+}
+
+ .contacteznous{
+    background-image: url("pigeon.png");
+    background-size: cover;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .adresse{
+     max-width: 500px;
+     line-height: 65px;
+     padding-left: 50px;
+     font-size: 18px;
+ }
+
+ .adresse i{
+     margin-right: 20px;
+     font-size: 25px;
+ }
+
+ .mailContact{
+     max-width: 680px;
+     margin-right: 50px;
+ }
+
+ .adresse, .mailContact{
+     flex: 1;
+ }
+
+ .mailContact h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+ }
+
+ .mailContact .text-box{
+     background: rgb(59, 59, 59);
+     color: white;
+     border: none;
+     width: calc(50% - 10px);
+     height: 50px;
+     font-size: 15px;
+     border-radius: 5px;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     opacity: 0.9;
+ }
+
+ .mailContact .text-box:first-child{
+     margin-right: 15px;
+ }
+
+ .mailContact textarea{
+    background: rgb(59, 59, 59);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+
+ }
+
+ .mailContact .boutonEnvoi{
+    float: right;
+    background:royalblue;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 800;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.mailContact .boutonEnvoi:hover{
+    background: blue;
+}
+
+@media(max-width: 680px){
+    .contacteznous{
+        flex-direction: column;
+    }
+    .adresse, .mailContact{
+        margin: 30px 30px;
+    }
+
+    .mailContact h2{
+        font-size: 30px;
+    }
+
+    .mailContact .text-box{
+        width: 100%;
+    }
+}
+
+
+.vid{
+    text-align: center;
+}
